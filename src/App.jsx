@@ -1,5 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
-import "./App.css";
+import Expenses from "./components/Expenses";
 const App = () => {
   const expenses = [
     {
@@ -23,24 +22,9 @@ const App = () => {
     },
   ];
   return (
-    //這裡的命名為props命名
-    <div className="expenses">
+    <div>
       <p>Let's get Started!</p>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
+      <Expenses items={expenses} />
     </div>
   );
 };
