@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses";
+import "./index.css";
 const App = () => {
   const expenses = [
     {
@@ -23,7 +24,7 @@ const App = () => {
   ];
   return (
     <div>
-      <p>Let's get Started!</p>
+      <p className="title-text">Let's get Started!</p>
       <Expenses items={expenses} />
     </div>
   );
