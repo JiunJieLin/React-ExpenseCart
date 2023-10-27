@@ -24,7 +24,6 @@ const initialExpenses = [
   },
 ];
 const App = () => {
-  const test = 123;
   const [expenses, setExpenses] = useState(initialExpenses);
 
   const addExpenseHandler = (expense) => {
